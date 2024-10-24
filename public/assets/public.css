@@ -1,0 +1,554 @@
+:root{
+    --grey: #F1F0F6;
+	--dark-grey: #8D8D8D;
+	--light: #fff;
+	--dark: #000;
+    --biru-abu:#344966;
+    --biru-abu-2: #3f597a;
+    --abu: #757e89;
+    --biru-laut: #0878c0;
+    --biru-muda: #5bbde2;
+    --merah-oren: #e4664e;
+    --navy: #00215e;
+    --kuning: #f5e715;
+    --biru-2: #88b4ed;
+    --merah : #e52d27;
+    --abu-2: #758694;
+    --shadow: #836e6a;
+    --navy-pekat: #001336;
+    --biru-agak-abu: #3f597a;
+    --navbar: #E9F0F8;
+    --biru-muda-2: #B4CDED;
+    --navy-hitam: #0d1821;
+    
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR */
+.navbar{
+    background-color: var(--navbar);
+    z-index: 10000;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
+
+}
+.navbar .navbar-brand{
+    color: var(--biru-abu);
+    font-weight: bold;
+}
+.navbar .navbar-img {
+    margin-right: 20px;
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--biru-abu);
+    text-transform: uppercase;
+    margin-left: -5px;
+}
+.navbar .navbar-nav .nav-link.active{
+    border-bottom: 2px solid black;
+}
+.navbar .navbar-toggler-icon{
+    color: var(--biru-abu);
+}
+.navbar .btn-group .btn{
+    background-color: var(--biru-abu);
+    color: var(--light);
+    border-radius: 24px;
+    font-size: 14px;
+}
+
+.navbar .nav-profil{
+  margin: 5px 0 0 5px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--biru-abu);
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.navbar .navbar-nav .dropdown-toggle::after {
+    margin-left: 5px;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    background-color: var(--light);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--biru-abu);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--biru-abu);
+    color: var(--light);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid black;
+}
+
+
+/* BANNER */
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+    object-fit: fill;
+}
+.carousel .carousel-caption{
+   margin-bottom: 13%;
+   text-transform: uppercase;
+}
+.carousel .carousel-caption .caption-h{
+    font-weight: bold;
+  
+}
+.carousel .carousel-caption .carousel-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--kuning);
+}
+.carousel .carousel-caption .btn{
+    background-color: var(--light);
+    color: var(--merah-oren);
+    font-weight: 700;
+    border-radius: 14px;
+}
+.carousel .carousel-caption .btn:hover{
+    background-color: var(--merah-oren);
+    color: var(--light);
+    transition: all 1s ease-in-out;
+}
+
+
+/* ABOUT */
+.content{
+    position: relative;
+}
+.content .about .about-brand{
+    color: var(--navy);
+}
+ 
+.content .about{
+    margin: 20px 0 40px 0;
+ 
+}
+
+.content .about .img-about{
+    height: 60vh;
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: 7px 7px 12px 7px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.content .about .about-text{
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--navy);
+     text-align: justify;
+     font-weight: 700;
+     
+}
+
+/* INFO PANEL */
+.content .about .info-panel{
+    margin-top: 30px;
+    background-color: var(--navy);
+    padding: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.content .about .info-panel .text-panel{
+    text-align: center;
+    color: var(--light);
+    font-weight: 700;
+}
+ 
+.content .about .info-panel .icon-panel{
+    text-align: center;
+    align-items: center;
+    color: var(--kuning);
+    width: 50px;
+    height: 50px;
+  
+}
+
+
+/* BERITA */
+
+.content .berita{
+    
+    background-color: var(--biru-abu-2);
+    position: relative;
+   
+}
+
+.content .berita .btn-s{
+    border: var(--merah) 2px solid;
+    
+}
+.content .berita .btn-s:hover{
+    background-color: var(--merah);
+    transition: all.3s ease-in-out;
+}
+
+.content .berita .card{
+    box-shadow: 7px 7px 14px 7px rgba(255, 254, 254, 0.2);
+}
+
+/* KERJA SAMA */
+
+.content .kerja-sama{
+    margin-top: -10px;
+    position: relative;
+    background-color: var(--light);
+    padding-bottom: 10px;
+}
+
+.content .kerja-sama .kerjasama-brand{
+    text-transform: uppercase;
+}
+
+/* GALERI */
+.content .galeri {
+    padding-bottom: 50px;
+    background-color: var(--biru-abu-2);
+}
+
+.content .galeri .galeri-brand{
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-shadow: 2px 2px var(--dark);
+    margin-bottom: 40px;
+    margin-top: -40px;
+    color: var(--light);
+}
+.content .galeri .box {
+    background-color: rgba(32, 32, 40, 0.518); 
+    padding: 30px;
+    height: 100px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+.content .galeri  .text-galeri{
+    color: var(--light);
+    font-weight: 700;
+    text-align: justify;
+}
+.content .galeri .btn-s{
+    background-color: var(--biru-muda-2);
+    color: var(--light);
+}
+.content .galeri .box-background {
+    position: relative;
+}
+.content .galeri .box-background::before {
+    content: "";
+    background-image: url('../assets/img/img2.png');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 14px 14px 7px rgba(255, 254, 254, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 360px;
+    z-index: 0;
+    
+}
+
+/* VISI MISI */
+.content .visi-misi {
+    margin: 55px 0px 25px 0px;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .visi-misi .visimisi-img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
+}
+.content .visi-misi .misi .visi-icon{
+    height: 150px;
+    display: block;
+    margin: 0 auto; 
+    margin-top: -60px;
+}
+.content .visi-misi .misi .visi-title{
+    color: var(--shadow);
+}
+
+.content .visi-misi .misi .visi-title-2{
+    margin-top: -50px;
+    color: var(--shadow);
+}
+
+.content .visi-misi .misi .btn{
+    border: var(--merah) 2px solid;
+    color: var(--dark);
+    
+}
+.content .visi-misi .misi .btn:hover{
+    background-color: var(--merah);
+    transition: all.3s ease-in-out;
+    color: var(--light);
+}
+
+/* FOOTER */
+.content .footer {
+    position: relative;
+    margin-top: 30px;
+    min-height: 40vh;
+    background-color: var(--biru-abu);
+    padding-bottom: 30px;
+}
+
+.content .footer .col-panel{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.content .footer .col-panel .medsos a{
+   color: var(--light);
+}
+.content .footer .panel{
+    margin-top: 30px;
+}
+
+.content .footer .panel .title-panel{
+    text-align: center;
+    color: white;
+    background-color: var(--merah);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.content .footer .col-panel .panel .icon-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+
+}
+.content .footer .col-panel .icon-group .icon{
+    margin-top: 5px;
+    color: white;
+}
+.content .footer .col-panel .panel .contact .pin ,.icon-group-2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.content .copyright{
+    background-color: var(--navbar);
+}
+
+/* ANDROID */
+@media screen and (max-width: 768px) {
+    .navbar .nav-profil{
+      margin-left: auto;
+    }
+    .navbar .btn-group .btn{
+      background-color: var(--biru-abu);
+      color: var(--light);
+      
+    }
+    .navbar .navbar-img {
+        margin-right: 10px;
+    }
+    .navbar .navbar-brand{
+        font-size: 14px;
+    }
+    /* CAROUSEL */
+    .carousel .carousel-item img{
+        width: 100%;
+        height: 50vh;
+        filter: brightness(50%);
+    }
+    .carousel .carousel-caption{
+        margin-bottom: 13%;
+     }
+     .carousel .carousel-caption .caption-h{
+         font-weight: bold;
+         font-size: 14px;
+     }
+     .carousel .carousel-caption .btn{
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    /* ABOUT */
+    .content .about .img-about{
+        height: 30vh;
+        width: 100%;
+
+    }
+    .content .about .about-brand{
+        font-size: 14px;
+    }
+    .content .about .about-text{
+        font-size: 8px;
+    }
+    
+/* info panel */
+   
+    .content .about .info-panel{
+        padding: 5px;
+    }
+
+    .content .about .info-panel .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .about .info-panel .col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .content .about .info-panel .text-panel{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+     
+    .content .about .info-panel .icon-panel{
+        
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* BERITA  */
+
+
+    /* KERJSAMA */
+
+    /* GALERI */
+    .content .galeri .galeri-brand{
+        font-size: 12px;
+        margin-top: 20px;
+
+    }
+    .content .galeri  .text-galeri{
+        font-size: 10px;
+  
+        font-weight: 100;
+    }
+    .content .galeri .btn{
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .content .galeri .box-background::before {
+        width: auto;
+        height: 205px;
+        cursor: pointer;
+    }
+    .content .galeri .box {
+        
+        padding: 25px;
+        height: auto;
+        
+    }
+
+    /* visi misi */
+    /* .content .visi-misi{
+       
+    } */
+    .content .visi-misi{
+        height: 40vh;
+    }
+    .content .visi-misi .visimisi-img{
+        width: 100%;
+        height: 150px;
+       
+    }
+    .content .visi-misi .misi .visi-icon{
+        height: 80px;
+        margin: 0 auto; 
+        margin-top: -40px;
+    }
+    .content .visi-misi .misi .visi-title{
+
+        font-size: 10px;
+    }
+    
+    .content .visi-misi .misi .visi-title-2{
+        margin-top: -30px;
+        font-size: 12px;
+    }
+    .content .visi-misi .misi .visi-text{
+        font-size: 9px;
+    }
+    .content .visi-misi .misi .btn{
+        font-size: 8px;
+    }
+
+    /* FOOTER */
+    .content .footer {
+       margin-top: 5px;
+    }
+
+    .content .footer .container {
+        padding: 10px;
+    }
+
+    .content .footer .col-panel{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+
+    .content  .footer .title-panel {
+        font-size: 14px;
+    }
+
+    .content  .footer .col-panel .panel .medsos{
+        flex-direction: row;
+    }
+    .content .footer .col-panel .panel .peta{
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    .content .footer .col-panel .panel .peta .peta-maps {
+       height: 200px;
+       width: auto;
+
+    }
+    
+
+    .content .footer .col-panel .panel .contact .pin ,.icon-group-2{
+        font-size: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+        
+    .content .copyright{
+        font-size: 10px;
+    }
+ }
